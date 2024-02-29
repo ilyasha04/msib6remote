@@ -1,0 +1,57 @@
+/* contoh selector tag di eksternal */
+p{
+    color: red;
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+}
+body{
+    background-color: aquamarine;
+    background-image: url(../gambar/pohon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+fieldset, legend{
+    border-width: 1px;
+    border-color: burlywood;
+    border-radius: 30px;
+}
+legend{
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    font width: bold;
+    font-size: 14pt;
+}
+table{
+    border: 10px;
+    margin: auto;
+}
+tr{
+    padding: 5px;
+    border: 1px solid greenyellow 
+}
+tr:hover{
+    background-color: aqua;
+    color: black;
+    font-size: 15pt;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+}
+/* contoh selector id dapat masuk ke semua tag */
+/* #paragraf{
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    color: aqua;
+} */
+a.item:link, a.item:visited, a.item:active{
+    text-decoration: none; /* menghilangkan garis pada link */
+    list-style: none; /* menghilangkan titik pada list */
+    display: block; /* menghilangkan a sebagai block */ 
+    float: left; /* menghilangkan a untuk kebagian kiri */
+    padding: 2px 3px; /* memberi jarak dan membentuk persegi */
+    background-color: antiquewhite; /* mewarnai block */
+
+}

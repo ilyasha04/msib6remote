@@ -1,0 +1,53 @@
+*{
+    /* universal memungkinkan semua tag yang ada didalam html terpengaruh dengan css universal */
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.header {
+    background-image: url('../gambar/Kuil-Fushimi-Inari-1000-Gerbang-1.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px;
+    background-size: cover;
+    text-align: center;
+    color: azure;
+}
+.navbar {
+    overflow: hidden;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+.navbar a{
+    float: left;
+    text-decoration: none;
+    padding: 14px 15px;
+    text-align: center;
+    /* margin: 30px; */
+}
+.navbar a:hover{
+    background-color: gray;
+    color: black;
+}
+.column{
+    float: left;
+    padding: 10px;
+}
+.column.side{
+    width: 25%;
+}
+.column.middle{
+    width: 50%;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both; /* membersikan float left sebelumnya  */
+}
+.footer{
+    background-color: cadetblue;
+    padding: 10px;
+    text-align: center;
+}
